@@ -22,5 +22,14 @@
 
         <a-entity obj-model="../ff/ff-logo.obj" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 12.32439583685814; latitude: 51.32269952084898;" animation-mixer/>
 </body>
+<body style='margin: 0; overflow: hidden;'>
+    <a-scene
+        vr-mode-ui="enabled: false"
+		embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        
+        <a-camera gps-camera rotation-reader></a-camera>
 
+        <a-entity gltf-model="./magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 7.277028449381559; latitude: 50.37374319021;" animation-mixer/>
+</body>
 </html>
